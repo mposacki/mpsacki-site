@@ -1,4 +1,4 @@
-# Hangman Game
+# My site
 
 
 1. yarn  /  npm install
