@@ -1,0 +1,77 @@
+.footer {
+  padding: 3.5rem 0;
+
+  background-color: map-get($colors, darkest);
+
+  color: map-get($colors, light);
+
+  &__container {
+    @include container();
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+    }
+  }
+
+  &__rights {
+    text-align: center;
+
+    @include breakpoint(md) {
+      text-align: left;
+    }
+  }
+
+  &__contact {
+     text-align: center;
+
+     @include breakpoint(md) {
+       text-align: right;
+     }
+  }
+
+  &__logo {
+    margin-bottom: 2rem;
+
+    cursor: pointer;
+  }
+
+  &__copy {
+    margin-bottom: 0.75rem;
+
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  &__heading {
+    margin-bottom: 1.5rem;
+
+    font-size: 2rem;
+
+    @include breakpoint(sm) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__email {
+    display: inline-block;
+
+    padding-bottom: 1rem;
+
+    font-size: 1rem;
+    color: map-get($colors, light);
+  }
+
+  &__github {
+    display: inline-block;
+    margin-right: 1.5rem;
+  }
+
+  &__linkedin {
+    display: inline-block;
+  }
+}

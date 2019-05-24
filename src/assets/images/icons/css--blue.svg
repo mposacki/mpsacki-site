@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97" height="138"></svg>
+  <defs>
+    <linearGradient id="a" x1="1" y1=".5" x2="0" y2=".5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#31b8f5" />
+      <stop offset="1" stop-color="#3167f5" />
+    </linearGradient>
+    <linearGradient id="d" x1="1.333" y1=".5" x2="-1.306" y2=".5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2ba9e2" />
+      <stop offset="1" stop-color="#2758d8" />
+    </linearGradient>
+    <linearGradient id="e" x1="1.418" y1=".5" x2="-.384" y2=".5" xlink:href="#a" />
+    <linearGradient id="b" x1="-10.229" y1="13.597" x2="-10.229" y2="14.597" gradientUnits="objectBoundingBox">
+      <stop offset=".387" stop-color="#d1d3d4" stop-opacity="0" />
+      <stop offset="1" stop-color="#d1d3d4" />
+    </linearGradient>
+    <linearGradient id="f" x1="-9.516" y1="14.078" x2="-9.516" y2="15.078" xlink:href="#b" />
+    <linearGradient id="c" x1="-5.39" y1="6.703" x2="-4.39" y2="6.703" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e8e7e5" />
+      <stop offset="1" stop-color="#fff" />
+    </linearGradient>
+    <linearGradient id="g" x1="-4.964" y1="30.297" x2="-3.964" y2="30.297" xlink:href="#c" />
+  </defs>
+  <path d="M189.551 226.941l-39.406 10.772-39.406-10.772-9.093-100.012h97z" transform="translate(-101.646 -99.713)"
+    fill="url(#a)" />
+  <path d="M269.289 154.511V248.8l.09.025 32.2-8.736 7.431-85.576z" transform="translate(-221.255 -119.407)"
+    fill="url(#d)" />
+  <path
+    d="M176.181 46.945V40.98h8.5v-6.527h-14.874V52.9h14.873v-5.955zm23.787-5.965h5.942v-6.527h-14.874v6.527c1.99 2.038 3.028 3.013 5.906 5.96-1.682 0-5.906.006-5.906.006V52.9h14.874v-5.955zm21.081 0h5.941v-6.527h-14.874v6.527c1.99 2.038 3.028 3.013 5.906 5.96-1.682 0-5.906.006-5.906.006V52.9h14.875v-5.955z"
+    transform="translate(-149.899 -34.453)" fill="url(#e)" />
+  <path d="M48.44 60.285l-28.474 11.95.944 11.831 27.53-11.861 29.285-12.616 1.214-12.1z" fill="#fff" />
+  <path d="M171.677 251.605l.944 11.831 27.53-11.861v-11.919z" transform="translate(-151.497 -179.384)"
+    fill="url(#b)" />
+  <path d="M299.667 196.167l-30.5 12.8v11.92l29.285-12.616z" transform="translate(-220.914 -148.67)" fill="url(#f)" />
+  <path
+    d="M171.827 280.258l.929 11.831 41.548.136-.929 15.775-13.675 3.942-13.143-3.4-.8-9.791h-12.205l1.593 18.9 24.691 7.479 24.557-7.343 3.186-37.531z"
+    transform="translate(-151.329 -208.094)" fill="url(#c)" />
+  <path
+    d="M48.655 72.164H20.181l.944 11.831 27.53.089zm0 31.646l-.135.038-13.36-3.4-.81-9.791H21.935l1.619 18.9 25.1 7.479z"
+    opacity=".05" />
+  <path d="M162.9 196.167h60.608l-1.2 12.1H164.36z" transform="translate(-145.008 -148.66)" fill="url(#g)" />
+  <path d="M48.68 47.507H17.643l1.484 12.1h29.555v-12.1z" opacity=".05" />
+</svg>

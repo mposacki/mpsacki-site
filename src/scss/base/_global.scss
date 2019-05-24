@@ -1,0 +1,27 @@
+html {
+  font-size: 93.75%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  @include breakpoint(sm) {
+    font-size: 100%;
+  }
+
+}
+
+body {
+  position: relative;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-weight: 700;
+}
+
+*::selection {
+  background-color: map-get($colors, primary);
+  color: map-get($colors, light);
+}
+
+path {
+  transition: fill .6s ease;
+}

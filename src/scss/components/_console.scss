@@ -1,0 +1,54 @@
+@import '../utils/variables';
+
+.console {
+  width: 100%;
+  
+  margin: 0 auto;
+  padding: 1rem;
+
+  background-color: map-get($colors, darkest);
+  border-radius: .75rem;
+
+  @include breakpoint(md) {
+    width: 900px;
+  }
+
+  &__dot {
+    display: inline-block;
+
+    width: 1rem;
+    height: 1rem;
+    
+    margin-right: .25rem;
+    margin-bottom: 1.5rem;
+    
+    border: none;
+    border-radius: 1rem;
+
+    &--red {
+      background-color: map-get($colors, red--lighten);
+    }
+
+    &--yellow {
+      background-color: map-get($colors, yellow--lighten);
+    }
+
+    &--green {
+      background-color: map-get($colors, green--lighten);
+    }
+  }
+
+  &__text {
+    & > span {
+      margin-right: .25rem;
+    
+      word-spacing: .125rem;
+    }
+  }
+
+  &__content {
+    color: map-get($colors, light);
+    
+    font-family: Tahoma, sans-serif;
+  }
+}

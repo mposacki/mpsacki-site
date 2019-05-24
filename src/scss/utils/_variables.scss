@@ -1,0 +1,54 @@
+$colors: (
+  primary: #31BAF5,
+  secondary: #3166F5,
+  secondary--darken: #1C43AA,
+
+  bg-gradient-primary: #3166f5,
+  bg-gradient-secondary: #19337b,
+
+  svg-colors: (
+    blue--light: #31BAF5,
+    blue: #3166F5,
+    blue--dark: #2758d8,
+
+    gray--light: #ccc,
+    gray: #d1d3d4,
+    gray--dark: #dbdbdb,
+  ),
+
+
+  light: #fff,
+  dark: #bcbcbc,
+  darker: #000,
+  darkest: #151718,
+
+  pink: #DA65A2,
+  pink--darken: #F92672,
+  yellow: #E4CB68,
+  yellow--lighten: #FFBD2E,
+  blue: #55B5DB,
+  green: #9FCA56,
+  green--lighten: #27C93F,
+  red: #E94A4A,
+  red--lighten: #FF5F56
+);
+
+$grid: (
+  gutter: 1rem,
+
+  container: (
+    xs: 540px,
+    sm: 740px,
+    md: 970px,
+    lg: 1170px,
+    xl: 1270px
+  )
+);
+
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1366px,
+  xl: 1600px
+)

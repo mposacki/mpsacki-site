@@ -1,0 +1,28 @@
+@import './mixins';
+
+body::before {
+  content: 'xxs:320';
+
+  display: none;
+  visibility: hidden;
+
+  @include breakpoint(xs) {
+    content: "xs:540"
+  }
+
+  @include breakpoint(sm) {
+    content: "sm:740"
+  }
+
+  @include breakpoint(md) {
+    content: "md:970"
+  }
+
+  @include breakpoint(lg) {
+    content: "lg:1170"
+  }
+
+  @include breakpoint(xl) {
+    content: "xl:1270"
+  }
+}

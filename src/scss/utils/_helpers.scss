@@ -1,0 +1,31 @@
+.yellow-text {
+  color: map-get($colors, yellow);
+}
+
+.blue-text {
+  color: map-get($colors, blue);
+}
+
+.green-text {
+  color: map-get($colors, green);
+}
+
+.red-text {
+  color: map-get($colors, red);
+}
+
+.pink-text {
+  color: map-get($colors,pink);
+}
+
+.pink-darken-text {
+  color: map-get($colors, pink--darken);
+}
+
+.indent2 {
+  padding-left: 1rem;
+}
+
+.indent4 {
+  padding-left: 2rem;
+}

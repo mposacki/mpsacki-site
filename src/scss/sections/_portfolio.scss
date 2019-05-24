@@ -1,0 +1,158 @@
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  @include breakpoint(sm) {
+    flex-direction: row;
+  }
+
+  &-section {
+    position: relative;
+
+    background-image: linear-gradient(to bottom, map-get($colors, bg-gradient-primary), map-get($colors, bg-gradient-secondary));
+
+    @include breakpoint(md) {
+      min-height: 65vh;
+
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='886'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='.512' y1='.449' x2='.51' y2='1.285' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%233166f5'/%3E%3Cstop offset='1' stop-color='%2319337b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath data-name='Union 12' d='M0 886V69.472c2.635-.04 5.321-.06 7.988-.06 12.319 0 25.423.429 38.947 1.277 12.968.812 26.789 2.038 41.079 3.642 26.567 2.984 55.457 7.321 88.323 13.258C237.881 98.7 304.973 113.947 376 130.087h.016c24.632 5.6 50.1 11.384 75.961 17.14 52.133 11.6 95.192 20.681 135.528 28.574 51.216 10.021 98.267 18.175 143.853 24.926 25.313 3.749 50.484 7.1 74.815 9.956a2229.722 2229.722 0 0 0 76.615 7.675c26.352 2.171 52.7 3.833 78.323 4.94a1861.61 1861.61 0 0 0 79.939 1.747c26.788 0 53.665-.614 79.888-1.825 27.223-1.258 54.564-3.2 81.263-5.766a1580.53 1580.53 0 0 0 82.549-10.137c28.023-4.2 56.2-9.225 83.751-14.936a1512.619 1512.619 0 0 0 84.86-20.168 1510.614 1510.614 0 0 0 85.884-25.828 1532.362 1532.362 0 0 0 86.821-31.92c29.311-11.793 58.8-24.727 87.667-38.442 18.667-10.261 37.421-19.714 55.745-28.093 17.733-8.112 35.551-15.439 52.945-21.777q24.506-8.964 50.167-15.962 22.06-6 44.886-10.191H1920v886z' fill='url(%23a)'/%3E%3C/svg%3E");
+      background-size: cover;
+      background-position-x: center;
+    }
+  }
+
+  &__container {
+    @include container();
+
+    padding-top: 2rem;
+    @include breakpoint(md) {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      padding-top: 0;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 2rem;
+
+    @include breakpoint(md) {
+      margin-bottom: 0;
+    }
+    &:hover {
+      .portfolio {
+        &__overlay {
+          opacity: 1;
+        }
+        &__description {
+          top: 50%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__img {
+    border-radius: .5rem;
+    max-width: 100%;
+    
+    @include breakpoint(sm) {
+      max-width: 300px;
+    }
+
+    @include breakpoint(md) {
+      max-width: 275px;
+    }
+
+    @include breakpoint(lg) {
+      max-width: unset;
+    }
+  }
+
+  &__separator {
+    width: 10%;
+    height: 3px;
+
+    margin-bottom: 1rem;
+
+    border: none;
+    border-radius: 2rem;
+
+    background-color: map-get($colors, light);
+
+    color: map-get($colors, light);
+  }
+
+  &__overlay {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    border-radius: .5rem;
+
+    background-color: rgba(map-get($colors, secondary--darken), .65);
+
+    opacity: 0;
+
+    transition: all .4s ease-in-out;
+  }
+
+  &__description {
+    position: absolute;
+
+    width: 100%;
+    top: 65%;
+    left: 50%;
+
+    color: map-get($colors, light);
+    text-align: center;
+
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+
+    transition: all .3s ease-in-out;
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+
+    font-size: 1.5rem;
+  }
+
+  &__anchor {
+    color: map-get($colors, light);
+
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color: darken(map-get($colors, light), 20%);
+    }
+
+    &:focus {
+      outline: none;
+      color: darken(map-get($colors, light), 35%);
+    }
+  }
+
+  &__goto {
+    display: block;
+
+    margin-bottom: .25rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}

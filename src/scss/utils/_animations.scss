@@ -1,0 +1,19 @@
+@import './variables';
+
+@keyframes typing-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: map-get($colors, darker);
+  }
+}

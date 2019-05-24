@@ -1,0 +1,87 @@
+@import '../utils/animations';
+@import '../utils/variables';
+
+.start {
+  height: calc(100vh - 10rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @include breakpoint(sm) {
+    height: calc(100vh - 15rem);
+  }
+
+  &__container {
+    @include container();
+    text-align: center;
+
+    @include breakpoint(md) {
+      padding-top: 7.5rem;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    position: relative;
+  }
+
+  &__heading {
+    font-size: 2.875rem;
+
+    animation: typing-text 2.5s steps(24), blink 0.5s infinite alternate;
+    overflow: hidden;
+    white-space: nowrap;
+
+    border-right: 3px solid map-get($colors, darker);
+
+    margin-bottom: 5rem;
+    text-align: left;
+
+    @include breakpoint(sm) {
+      font-size: 4rem;
+    }
+
+    @include breakpoint(md) {
+      font-size: 5.625rem;
+    }
+  }
+
+  &__button {
+    display: inline;
+
+    padding: 1rem 4.5rem;
+
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: map-get($colors, light);
+    text-align: center;
+
+    border: none;
+    border-radius: 2.5rem;
+
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, map-get($colors, primary), map-get($colors, secondary), map-get($colors, secondary), map-get($colors, primary));
+
+    transition: all .35s ease-in-out;
+    cursor: pointer;
+
+    @include breakpoint(sm) {
+      padding: 1rem 6.5rem;
+    }
+
+    &:hover {
+      background-position: 100% 0;
+      transition: all .35s ease-in-out;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__arrow-image {
+    margin-right: 0.5rem;
+  }
+}

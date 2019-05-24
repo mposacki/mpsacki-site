@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45.698" height="43.167"></svg>
+  <defs>
+    <linearGradient id="a" x1=".5" x2=".5" y2=".744" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b2b2b2" />
+      <stop offset="1" stop-color="#656565" />
+    </linearGradient>
+    <linearGradient id="b" x1=".385" y1=".109" x2=".458" y2=".646" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4b4b4b" />
+      <stop offset="1" stop-color="#9f9f9f" />
+    </linearGradient>
+    <linearGradient id="c" y2=".68" xlink:href="#a" />
+    <linearGradient id="d" x1=".362" y1="1.154" x2=".467" y2=".556" xlink:href="#b" />
+  </defs>
+  <g data-name="logo szare" opacity=".5">
+    <rect data-name="Rectangle 35" width="10" height="41" rx="5" transform="translate(33.667 2.167)" fill="url(#a)" />
+    <rect data-name="Rectangle 34" width="10" height="32" rx="5" transform="rotate(-135 17.686 10.07)" fill="url(#b)" />
+    <rect data-name="Rectangle 35" width="10" height="41" rx="5" transform="translate(2.031 2.167)" fill="url(#c)" />
+    <path data-name="Path 68" d="M5 0a5 5 0 0 1 5 5v22a5 5 0 1 1-10 0V5a5 5 0 0 1 5-5z"
+      transform="rotate(-45 8.535 3.535)" fill="url(#d)" />
+  </g>
+</svg>

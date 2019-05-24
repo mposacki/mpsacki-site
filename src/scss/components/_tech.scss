@@ -1,0 +1,223 @@
+.tech {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-items: stretch;
+  justify-content: center;
+
+  margin-top: 2rem;
+
+  @include breakpoint(md) {
+    flex-direction: column;
+
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  &__bar {
+    width: 10px;
+
+    height: 550px;
+
+    margin: 0 1rem;
+
+    @include breakpoint(xs) {
+      height: 650px;
+
+      margin: 0 1.75rem;
+    }
+
+    @include breakpoint(sm) {
+      height: 800px;
+    }
+
+    @include breakpoint(md) {
+      width: 100%;
+
+      height: 10px;
+
+      margin: 1.75rem 0;
+    }
+  }
+
+  &__bar-svg {
+    width: 10px;
+
+    max-height: 550px;
+
+    @include breakpoint(xs) {
+      max-height: 650px;
+    }
+
+    @include breakpoint(sm) {
+      max-height: 800px;
+    }
+
+    @include breakpoint(md) {
+      width: auto;
+
+      max-height: 10px;
+    }
+  }
+
+  &-icon-box {
+    display: flex;
+
+    flex-direction: column;
+
+    max-width: calc((100% - 2rem - 10px) / 2);
+
+    @include breakpoint(md) {
+      flex-direction: row;
+      align-items: center;
+
+      justify-content: space-between;
+
+      max-width: 100%;
+    }
+  }
+
+  &__icon {
+    margin: auto;
+
+    max-width: 100%;
+
+    @include breakpoint(md) {
+      margin: 0;
+    }
+
+    &-html {
+
+      .html__path {
+        &1,
+        &4 {
+          fill: map-deep-get($colors, svg-colors, gray--dark);
+        }
+        &2 {
+          fill: map-deep-get($colors, svg-colors, gray--light);
+        }
+      }
+
+      &.active {
+
+        .html__path {
+          &1,
+          &4 {
+            fill: map-deep-get($colors, svg-colors, blue);
+          }
+          &2 {
+            fill: map-deep-get($colors, svg-colors, blue--dark);
+          }
+        }
+      }
+    }
+
+    &-js {
+
+      .js__path {
+        &1 {
+          fill: map-deep-get($colors, svg-colors, gray--dark);
+        }
+      }
+
+      &.active {
+
+        .js__path {
+          &1 {
+            fill: map-deep-get($colors, svg-colors, blue);
+          }
+        }
+      }
+    }
+
+     &-node {
+
+      .node__path {
+        fill: map-deep-get($colors, svg-colors, gray--dark);
+      }
+
+      &.active {
+
+        .node__path {
+          fill: map-deep-get($colors, svg-colors, blue);
+        }
+      }
+    }
+
+    &-css {
+
+      .css__path {
+        &1
+        &3,
+        &6 {
+          fill: map-deep-get($colors, svg-colors, gray--dark);
+        }
+        &2 {
+          fill: map-deep-get($colors, svg-colors, gray--light);
+        }
+        &5 {
+          fill: map-deep-get($colors, svg-colors, gray);
+        }
+      }
+
+      &.active {
+
+        .css__path {
+           &1,
+           &3 {
+             fill: map-deep-get($colors, svg-colors, blue);
+           }
+           &2 {
+             fill: map-deep-get($colors, svg-colors, blue--dark);
+           }
+           &5 {
+             fill: map-deep-get($colors, svg-colors, light);
+           }
+           &6 {
+             fill: map-deep-get($colors, svg-colors, light);
+           }
+        }
+      }
+    }
+
+    &-sass {
+
+      .sass__path {
+        fill: map-deep-get($colors, svg-colors, gray--dark);
+      }
+
+      &.active {
+
+        .sass__path {
+          fill: map-deep-get($colors, svg-colors, blue);
+        }
+      }
+    }
+
+    &-vue {
+
+      .vue__path {
+        &1 {
+          fill: map-deep-get($colors, svg-colors, gray--dark);
+        }
+        &2 {
+          fill: map-deep-get($colors, svg-colors, gray--light);
+        }
+      }
+
+      &.active {
+
+        .vue__path {
+          &1 {
+            fill: map-deep-get($colors, svg-colors, blue);
+          }
+          &2 {
+            fill: map-deep-get($colors, svg-colors, blue--dark);
+          }
+        }
+      }
+    }
+  }
+}
