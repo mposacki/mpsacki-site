@@ -42,6 +42,7 @@
     "scrollmagic": "^2.0.6",
     "smoothscroll-polyfill": "^0.4.4",
     "uglifyjs-webpack-plugin": "^2.1.2",
+    "underscore": "^1.9.1",
     "webpack-merge": "^4.2.1"
   }
 }

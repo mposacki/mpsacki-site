@@ -7,6 +7,11 @@ import {
 import './utils/fepolyfill'
 
 import navToggle from './navToggle'
+import scrollSections from './scrollSections'
+
+import {
+  throttle
+} from 'underscore'
 
 import {
   updateVars,
@@ -21,6 +26,7 @@ import smoothscroll from 'smoothscroll-polyfill'
 smoothscroll.polyfill()
 
 const animationScene = new Scene(DOMElements.$bar)
+const sections = document.querySelectorAll('.nav__link')
 
 let sectionPositions,
   breakpointUses = DOMElements.$processBar.clientWidth,
@@ -43,8 +49,9 @@ makeSVG(breakpointName, breakpointSize, animationScene);
 
 }))
 
-window.addEventListener('scroll', (e) => {
+window.addEventListener('scroll', () => {
   progressSectionAnimation(breakpointSize)
+  throttle(scrollSections(sections), 200);
 })
 
 // const me = {
